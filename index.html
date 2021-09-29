@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>  Welcome to new world  </title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body onload="slider()">
+             <div class="baner">
+                 <div class="slider">
+                     <img src="image-5.jpg" id="slideImg">
+                 </div>
+                 <div class="overly">
+                   <div class="navbar">
+                  <div class="logo">
+                    <a href="#" >  <h1> BD-Triks </h1>  </a>  
+                  </div>
+               <div class="menu-icons">
+                  
+                <img src="Home-icon.png">
+                <img src="shoping.png">
+                <img src="search.png">
+                <img src="menu.png">
+
+               </div>
+                   
+                     </div>
+
+
+                     <div class="content">
+                        <h1> LET'S START TO LEARN  </h1>
+                        <h3> Stay with us for creat a new world </h3>
+                          
+                           <button type="button">Watch more </button>
+                           <button type="button" class=" btn-2">SUBSCRIBE </button>
+
+                    </div>
+                 </div>
+        
+
+             </div>
+
+<script>
+
+var slideImg=document.getElementById("slideImg");
+ var images=new Array(
+         "image-1.jpg",
+        "image-2.jpg",
+        "image-3.jpg",
+        "image-4.jpg",
+        "image-5.jpg",
+        "image-6.jpg"
+
+
+ );
+
+     var len=images.length;
+     var i = 0;
+     function slider(){
+         if(i > len-1){
+             i = 0;
+         }
+         slideImg.src=images[i];
+         i++;
+         setTimeout('slider()',3000);
+     }
+ 
+
+
+</script>
+
+
+
+    </body>
+</html>
